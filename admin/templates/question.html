@@ -1,0 +1,35 @@
+<div class="question" data-number="{{number}}">
+    <div class="info">
+        <div class="thumb" data-id="{{thumbnail_id}}">
+        </div>
+        <input type="hidden" name="answers[{{number}}][thumbnail_id]" value="{{thumbnail_id}}">
+        <input type="text" name="answers[{{number}}][title]" value="{{title}}" placeholder="Question">
+        <div class="correct-info">
+            <label>Correct:</label>
+            <select class="correct" name="answers[{{number}}][correct]"></select>
+            <textarea placeholder="Description" name="answers[{{number}}][description]">{{description}}</textarea>
+        </div>
+    </div>
+    <div class="variants" data-number="{{number}}">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        №
+                    </th>
+                    <th>
+                        Answers
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="actions">
+        <button class="button-primary delete-question red">Delete question</button>
+        <button class="button-primary add-question">Add question</button>
+        <button class="button-primary add-variant">Add variant</button>
+    </div>
+</div>

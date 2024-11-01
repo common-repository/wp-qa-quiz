@@ -1,0 +1,213 @@
+.quiz-info{
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    padding: 0 10px;
+    margin: 10px 0 0;
+}
+
+.questions {
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    padding: 10px;
+}
+
+.questions .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.questions .question{
+    overflow: hidden;
+}
+.questions .question .thumb{
+    float: left;
+    width: 150px;
+    min-height: 100px;
+    text-align: center;
+    margin-right: 19px;
+}
+.questions .question .thumb.noimage{
+    background: url(../img/noimage.png) no-repeat center;
+    cursor: pointer;
+}
+.questions .question .thumb img{
+    max-width: 150px;
+    width: 100%;
+}
+
+.questions .question .info{
+    overflow: hidden;
+}
+
+.questions .question .info .correct-info{
+    margin-left: 170px;
+}
+.questions .question .info .correct-info select{
+    width: 50%;
+    margin: 0px 0 10px;
+}
+.questions .question .info .correct-info label{
+    display: block;
+    margin: 0 0 3px;
+}
+
+.questions .question .info .correct-info textarea{
+    width: 100%;
+}
+
+.questions .question .variants{
+    clear: both;
+    margin-top: 6px;
+}
+.questions .question .variants table{
+    width: 100%;
+    clear: both;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 5px 0;
+}
+
+.questions .question .variants .variant{
+    text-align: center;
+    position: relative;
+}
+.questions .question .variants span.delete{
+    text-align: center;
+    right: 12px;
+    position: absolute;
+    top: 9px;
+    color: #BCBCBC;
+    cursor: pointer;
+}
+.questions .question .variants th{
+    padding-bottom: 5px;
+}
+.questions .question .variants td{
+    padding: 0 10px 0 0px;
+    position: relative;
+}
+.questions .question .variants .variant .num{
+    text-align: center;
+    width: 25px;
+    padding: 10px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: move;
+}
+
+.questions .question .variants .variant .correct{
+    text-align: center;
+    width: 70px;
+}
+
+.questions .question .variants .variant input[type="text"]{
+    width: 100%;
+    padding: 5px;
+}
+.questions .question .variants .variant .add{
+    vertical-align: middle;
+    height: 23px;
+}
+
+.questions .question .actions{
+    margin: 10px 0;
+    text-align: right;
+}
+
+button.red{
+    outline: #A92C2C !important;
+    background-color: #E53737 !important;
+    border-color: #A92C2C !important;
+    -webkit-box-shadow: 0 1px 0 #A92C2C !important;
+    box-shadow: 0 2px 0 #A92C2C !important;
+    text-shadow: none !important;
+}
+.questions .delete-question:hover{
+    background-color: #F73F3F !important;
+}
+.questions .delete-question:active{
+    -webkit-box-shadow: inset 0 2px 0 #A92C2C !important;
+    box-shadow: inset 0 0px 0 #A92C2C !important;
+}
+
+.results{
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    padding: 10px 0 0;
+}
+.results .result{
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E4E4E4;
+    margin-bottom: 10px;
+}
+.results .result:last-child{
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.results .result .thumb{
+    float: left;
+    width: 150px;
+    min-height: 100px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 19px;
+}
+.results .result .thumb.noimage{
+    background: url(../img/noimage.png) no-repeat center;
+    cursor: pointer;
+}
+.results .result .thumb img{
+    max-width: 150px;
+    width: 100%;
+}
+.results .result .info{
+    margin-left: 180px;
+    margin-right: 20px;
+}
+.results .result .info textarea{
+    margin-top: 4px;
+    width: 100%;
+}
+.results .result .actions{
+    text-align: right;
+}
+
+.settings{
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    padding: 0 0;
+}
+
+.settings .row{
+    padding: 10px;
+    overflow: hidden;
+}
+
+.settings .row .thumb.noimage {
+    background: url(../img/noimage.png) no-repeat center;
+    cursor: pointer;
+}
+.settings .row .thumb {
+    float: left;
+    width: 150px;
+    min-height: 100px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 19px;
+}
+
+a.nav-tab-active{background: white !important;}

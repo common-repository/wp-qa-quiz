@@ -1,0 +1,15 @@
+<div class="result" data-number="{{number}}">
+        <div class="thumb" data-id="{{thumbnail_id}}"></div>
+        <input type="hidden" name="results[{{number}}][thumbnail_id]" value="{{thumbnail_id}}">
+        <div class="info">
+            <label>Score</label>
+            <input type="number" name="results[{{number}}][score]" value="{{score}}" min="0" max="100">
+            <br>
+            <label>Score text</label><br>
+            <textarea name="results[{{number}}][text]" placeholder="Text">{{text}}</textarea>
+            <div class="actions">
+                <button class="button-primary delete red">Delete</button>
+                <button class="button-primary add">Add</button>
+            </div>
+        </div>
+</div>
